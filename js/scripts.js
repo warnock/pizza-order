@@ -27,20 +27,22 @@ Pizza.prototype.meatTopping = function () {
     this.value += 2;
   } else if (this.toppingOne === "noMeat") {
     0;
-  }else {
+  } else {
     this.value += 5;
   }
 }
 Pizza.prototype.veggieTopping = function () {
   if (this.toppingTwo === "allTheVeggies") {
     this.value += 3;
-  }else {
+  } else {
     this.value += 1;
   }
 }
 Pizza.prototype.extraCheese = function () {
-  if (this.toppingThree === "extra cheese"){
+  if (this.toppingThree === "extraCheese"){
     this.value += 2;
+  } else {
+    0;
   }
 }
 
@@ -61,6 +63,8 @@ $(function() {
     console.log(newPizza);
     newPizza.totalCost();
     console.log(newPizza);
+
+    $(".pizzaTotal").text("Your pizza pie total is: $" + newPizza.value);
 
   });
 });
