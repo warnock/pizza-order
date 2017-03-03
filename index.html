@@ -13,57 +13,59 @@
       <h1>Pizza Pie!</h1>
       <h2>Feeding our community the best pie since 1985</h2>
       <p>Get your custom pizza in the oven faster by submitting your order online.</p>
-      <form id="pizzaOrder">
-        <div class="form-group">
-          <h3>Select the size of your pie!</h3>
-          <div class="radio">
-              <label><input type="radio" name="size" value="small">Small - $10.00</label>
+      <div class="formContainer">
+        <form id="pizzaOrder">
+          <div class="form-group">
+            <h3>Select the size of your pie!</h3>
+            <div class="radio">
+                <label><input type="radio" name="size" value="small">Small - $10.00</label>
+            </div>
+            <div class="radio">
+              <label><input type="radio" name="size" value="medium">Medium - $12.00</label>
+            </div>
+            <div class="radio">
+              <label><input type="radio" name="size" value="large">Large - $15.00</label>
+            </div>
           </div>
-          <div class="radio">
-            <label><input type="radio" name="size" value="medium">Medium - $12.00</label>
+          <div class="form-group">
+            <h3>Select your meat!</h3>
+            <div class="radio">
+                <label><input type="radio" name="meatTopping" value="pepperoni">Pepperoni - $2.00</label>
+            </div>
+            <div class="radio">
+              <label><input type="radio" name="meatTopping" value="sausage">Sausage - </label>
+            </div>
+            <div class="radio">
+              <label><input type="radio" name="meatTopping" value="bacon">Canadian Bacon</label>
+            </div>
+            <div class="radio">
+              <label><input type="radio" name="meatTopping" value="noMeat">No meat for me!</label>
+            </div>
           </div>
-          <div class="radio">
-            <label><input type="radio" name="size" value="large">Large - $15.00</label>
+          <div class="form-group">
+            <h3>Select the veggies you want!</h3>
+            <div class="radio">
+                <label><input type="radio" name="vegieTopping" value="allTheVeggies">Give me ALL THE VEGGIES! - $3.00</label>
+            </div>
+            <div class="radio">
+              <label><input type="radio" name="vegieTopping" value="mushrooms">Mushrooms - $1.00</label>
+            </div>
+            <div class="radio">
+              <label><input type="radio" name="vegieTopping" value="olives">Olives - $1.00</label>
+            </div>
           </div>
-        </div>
-        <div class="form-group">
-          <h3>Select your meat!</h3>
-          <div class="radio">
-              <label><input type="radio" name="meatTopping" value="pepperoni">Pepperoni</label>
+          <div class="form-group">
+            <h3>Extra Cheese?</h3>
+            <div class="radio">
+                <label><input type="radio" name="extraCheese" value="extraCheese">Hell yeah! - $2.00</label>
+            </div>
+            <div class="radio">
+              <label><input type="radio" name="extraCheese" value="noExtraCheese">Hell no! - $0 </label>
+            </div>
           </div>
-          <div class="radio">
-            <label><input type="radio" name="meatTopping" value="sausage">Sausage</label>
-          </div>
-          <div class="radio">
-            <label><input type="radio" name="meatTopping" value="bacon">Canadian Bacon</label>
-          </div>
-          <div class="radio">
-            <label><input type="radio" name="meatTopping" value="noMeat">No meat for me!</label>
-          </div>
-        </div>
-        <div class="form-group">
-          <h3>Select the veggies you want!</h3>
-          <div class="radio">
-              <label><input type="radio" name="vegieTopping" value="allTheVeggies">Give me ALL THE VEGGIES! - $3.00</label>
-          </div>
-          <div class="radio">
-            <label><input type="radio" name="vegieTopping" value="mushrooms">Mushrooms - $1.00</label>
-          </div>
-          <div class="radio">
-            <label><input type="radio" name="vegieTopping" value="olives">Olives - $1.00</label>
-          </div>
-        </div>
-        <div class="form-group">
-          <h3>Extra Cheese?</h3>
-          <div class="radio">
-              <label><input type="radio" name="extraCheese" value="extraCheese">Hell yeah! - $2.00</label>
-          </div>
-          <div class="radio">
-            <label><input type="radio" name="extraCheese" value="noExtraCheese">Hell no! - $0 </label>
-          </div>
-        </div>
-        <button type="submit" class="btn">Pizza Me!</button>
-      </form>
+          <button type="submit" class="btn">Pizza Me!</button>
+        </form>
+      </div>
     </div>
 
   </body>

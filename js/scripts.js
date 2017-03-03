@@ -25,7 +25,9 @@ Pizza.prototype.pizzaSize = function () {
 Pizza.prototype.meatTopping = function () {
   if (this.toppingOne === "pepperoni") {
     this.value += 2;
-  } else {
+  } else if (this.toppingOne === "noMeat") {
+    0;
+  }else {
     this.value += 5;
   }
 }
@@ -44,9 +46,21 @@ Pizza.prototype.extraCheese = function () {
 
 //User Interface Logic
 $(function() {
-  $("#pizzaOrder").submit(function(){
+  $("form#pizzaOrder").submit(function(event) {
     event.preventDefault();
-    
+    var size =  $("input:radio[name=size]:checked").val();
+    // console.log(size);
+    var toppingOne =  $("input:radio[name=meatTopping]:checked").val();
+    // console.log(toppingOne);
+    var toppingTwo =  $("input:radio[name=vegieTopping]:checked").val();
+    // console.log(toppingTwo);
+    var toppingThree =  $("input:radio[name=extraCheese]:checked").val();
+    // console.log(toppingThree);
+
+    var newPizza = new Pizza(size, toppingOne, toppingTwo, toppingThree);
+    console.log(newPizza);
+    newPizza.totalCost();
+    console.log(newPizza);
 
   });
 });
