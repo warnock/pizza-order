@@ -51,13 +51,9 @@ $(function() {
   $("form#pizzaOrder").submit(function(event) {
     event.preventDefault();
     var size =  $("input:radio[name=size]:checked").val();
-    // console.log(size);
     var toppingOne =  $("input:radio[name=meatTopping]:checked").val();
-    // console.log(toppingOne);
     var toppingTwo =  $("input:radio[name=vegieTopping]:checked").val();
-    // console.log(toppingTwo);
     var toppingThree =  $("input:radio[name=extraCheese]:checked").val();
-    // console.log(toppingThree);
 
     var newPizza = new Pizza(size, toppingOne, toppingTwo, toppingThree);
     console.log(newPizza);
