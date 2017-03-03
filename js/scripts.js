@@ -1,3 +1,4 @@
+//Business Logic
 function Pizza(size, toppingOne, toppingTwo, toppingThree) {
   this.size = size;
   this.toppingOne = toppingOne;
@@ -40,3 +41,12 @@ Pizza.prototype.extraCheese = function () {
     this.value += 2;
   }
 }
+
+//User Interface Logic
+$(function() {
+  $("#pizzaOrder").submit(function(){
+    event.preventDefault();
+    
+
+  });
+});
