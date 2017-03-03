@@ -27,14 +27,14 @@ Pizza.prototype.meatTopping = function () {
     this.value += 2;
   } else if (this.toppingOne === "noMeat") {
     0;
-  } else {
+  } else if (this.toppingOne === "sausage" || this.toppingONe === "bacon"){
     this.value += 5;
   }
 }
 Pizza.prototype.veggieTopping = function () {
   if (this.toppingTwo === "allTheVeggies") {
     this.value += 3;
-  } else {
+  } else if (this.toppingTwo === "mushroom" || this.toppingTwo ==="olive") {
     this.value += 1;
   }
 }
