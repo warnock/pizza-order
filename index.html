@@ -13,12 +13,12 @@
     <div class="container">
       <div class="headerImg">
         <h1>Pizza Pie!</h1>
-        <h2>Feeding our community the best pie since 1985</h2>
       </div>
       <div class="row">
         <div class="col-md-6">
           <div class="formContainer">
             <form id="pizzaOrder">
+              <h2>Feeding our community the best pie since 1985</h2>
               <p>Get your custom pizza in the oven faster by submitting your order online.</p>
               <div class="form-group">
                 <h3>Select the size of your pie!</h3>
@@ -44,7 +44,7 @@
                   <label><input type="radio" name="meatTopping" value="bacon">Canadian Bacon - $5.00 </label>
                 </div>
                 <div class="radio">
-                  <label><input type="radio" name="meatTopping" value="noMeat">No meat for me! - $0</label>
+                  <label><input type="radio" name="meatTopping" value="noMeat">No meat for me! - no extra cost</label>
                 </div>
               </div>
               <div class="form-group">
@@ -65,18 +65,31 @@
                     <label><input type="radio" name="extraCheese" value="extraCheese">Hell yeah! - $2.00</label>
                 </div>
                 <div class="radio">
-                  <label><input type="radio" name="extraCheese" value="noExtraCheese">Hell no! - $0 </label>
+                  <label><input type="radio" name="extraCheese" value="noExtraCheese">Hell no! - no extra cost </label>
                 </div>
               </div>
               <button type="submit" class="btn">Pizza Me!</button>
             </form>
-          </div>
-          <div class="col-md-6">
-
+            <p class="pizzaTotal"></p>
           </div>
         </div>
+        <div class="col-md-6">
+          <ul>
+            <li>
+              <p>Simple</p>
+              <img src="img/pizza1.jpg" alt="pizza!">
+            </li>
+            <li>
+              <p>Fresh</p>
+              <img src="img/pizza2.jpg" alt="pizza!">
+            </li>
+            <li>
+              <p>Ingredients</p>
+              <img src="img/pizza3.jpg" alt="pizza!">
+            </li>
+          </ul>
+        </div>
       </div>
-      <p class="pizzaTotal"></p>
     </div>
   </body>
 </html>
