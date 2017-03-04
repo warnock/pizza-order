@@ -1,5 +1,5 @@
 body {
-  background-color:lightgray;
+  background-color: lightgray;
 }
 .headerImg {
   background-image: url("../img/headerImg.jpg");
@@ -44,7 +44,7 @@ img {
   width: 55%;
 }
 ul {
-  padding:0;
+  padding: 0;
 }
 li {
    list-style-type: none;

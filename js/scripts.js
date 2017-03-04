@@ -56,11 +56,8 @@ $(function() {
     var toppingThree =  $("input:radio[name=extraCheese]:checked").val();
 
     var newPizza = new Pizza(size, toppingOne, toppingTwo, toppingThree);
-    console.log(newPizza);
     newPizza.totalCost();
-    console.log(newPizza);
 
     $(".pizzaTotal").text("Your pizza pie total is: $" + newPizza.value);
-
   });
 });
